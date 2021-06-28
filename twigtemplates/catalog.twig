@@ -1,0 +1,9 @@
+{% if catalog|length > 0 %}
+    {% for item in catalog %}
+        <h1>{{ item.name }}</h1>
+        <h2>{{ item.price }}</h2>
+        <hr>
+    {% endfor %}
+   {% else %}
+    <h2>К сожалению, на данный момент товары отсутствуют</h2>
+{% endif %}
